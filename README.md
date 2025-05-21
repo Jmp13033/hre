@@ -3,7 +3,7 @@
 ### 🚀 The *Fastest Engine in the World*
 
 ```bash
-pip install hre-tools
+pip install hre-tools --verbose
 ```
 
 A blazing-fast, lightweight API for real-time hybrid document retrieval using both sparse (TF-IDF + BM25) and dense (embedding-based + cross-encoder) methods.  
