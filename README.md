@@ -1,5 +1,7 @@
 # Hybrid Retriever API
 
+pip install hre-tools
+
 A lightweight FastAPI-based API for performing hybrid document retrieval using lexical (TF-IDF + BM25) and semantic (embedding-based + cross-encoder) search. It wraps a Rust + PyO3-backed `HybridRetriever` for high performance and accurate search over small-to-medium datasets.
 
 ## 🔧 Features
@@ -12,6 +14,8 @@ A lightweight FastAPI-based API for performing hybrid document retrieval using l
 ---
 
 ## 📦 Requirements
+
+
 
 - Python 3.8+
 - `numpy`
