@@ -7,7 +7,7 @@ pip install hre-tools
 ```
 
 A blazing-fast, lightweight API for real-time hybrid document retrieval using both sparse (TF-IDF + BM25) and dense (embedding-based + cross-encoder) methods.  
-Powered by Rust, HRE delivers unmatched speed and precision perfect for AI agents, enterprise search, internal tools, chat-based QA, and more.
+Powered by Rust + PyO3 under the hood, HRE delivers unmatched speed and precision — perfect for AI agents, enterprise search, internal tools, chat-based QA, and more.
 
 ---
 
@@ -27,6 +27,7 @@ Powered by Rust, HRE delivers unmatched speed and precision perfect for AI agent
 - `numpy`
 - PyO3-bound `hre` module (Rust-backed)
 - A compatible cross-encoder model (e.g., `cross-encoder/ms-marco-MiniLM-L-6-v2`)
+- **Rust toolchain:** [Rust & Cargo](https://www.rust-lang.org/tools/install) (needed to build the Rust extension)
 
 ---
 
