@@ -1,15 +1,5 @@
 # 🌍 Hybrid Retriever API
 
-## ⚠️ Hardware Compatibility Note
-
-This package includes optimized implementations that may use CPU-specific features when available. 
-Key considerations:
-- **x86_64 Systems**: Automatic AVX2 acceleration will be used if detected
-
-For maximum performance on x86, ensure:
-- CPU supports AVX2 instructions
-
-*Note: The package will automatically use the fastest available implementation for your hardware.*
 
 ### 🚀 The *Fastest Engine in the World*
 
@@ -78,6 +68,25 @@ retrieved_docs, other_scores = retriever.retrieve(query_text, top_k=3)
 
 ---
 
+
+
+## ⚠️ Hardware Compatibility Note
+
+This package includes optimized implementations that may use CPU-specific features when available. 
+Key considerations:
+- **x86_64 Systems**: Automatic AVX2 acceleration will be used if detected
+
+For maximum performance on x86, ensure:
+- CPU supports AVX2 instructions
+
+*Note: The package will automatically use the fastest available implementation for your hardware.*
+
+
+
 ## 💬 Feedback
 
 We’re currently running a pilot and looking for feedback! Try it out and let us know how it performs on your real-world workloads.
+
+
+
+
