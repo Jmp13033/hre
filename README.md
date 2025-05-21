@@ -7,7 +7,7 @@ pip install hre-tools
 ```
 
 A blazing-fast, lightweight API for real-time hybrid document retrieval using both sparse (TF-IDF + BM25) and dense (embedding-based + cross-encoder) methods.  
-Powered by Rust, HRE delivers unmatched speed and precision — perfect for AI agents, enterprise search, internal tools, chat-based QA, and more.
+Powered by Rust, HRE delivers unmatched speed and precision perfect for AI agents, enterprise search, internal tools, chat-based QA, and more.
 
 ---
 
