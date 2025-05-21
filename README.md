@@ -1,27 +1,36 @@
-# Hybrid Retriever API
+# 🌍 Hybrid Retriever API
 
-<pre> ## 📦 Installation ```bash pip install hre-tools ``` </pre>
+### 🚀 The *Fastest Engine in the World*
 
-A lightweight FastAPI-based API for performing hybrid document retrieval using lexical (TF-IDF + BM25) and semantic (embedding-based + cross-encoder) search. It wraps a Rust + PyO3-backed `HybridRetriever` for high performance and accurate search over small-to-medium datasets.
+```bash
+pip install hre-tools
+```
+
+A blazing-fast, lightweight API for real-time hybrid document retrieval using both sparse (TF-IDF + BM25) and dense (embedding-based + cross-encoder) methods.  
+Powered by Rust + PyO3 under the hood, HRE delivers unmatched speed and precision — perfect for AI agents, enterprise search, internal tools, chat-based QA, and more.
+
+---
 
 ## 🔧 Features
 
-- ⚡ Hybrid search using precomputed document embeddings + query text
-- 🧠 Cross-encoder reranking support
-- 🔎 BM25 + TF-IDF lexical fallback
-- 🌐 CORS-enabled and API-ready
+- ⚡ **Real-time hybrid search** combining dense & sparse signals
+- 🧠 Optional **cross-encoder reranking** for precision
+- 🔎 **Lexical fallback** with BM25 + TF-IDF
+- 🌐 **CORS-enabled** and API-ready
+- 🏢 Designed for business-critical applications
 
 ---
 
 ## 📦 Requirements
 
-
-
 - Python 3.8+
 - `numpy`
-- PyO3-bound `hre` module (compiled from Rust)
+- PyO3-bound `hre` module (Rust-backed)
 - A compatible cross-encoder model (e.g., `cross-encoder/ms-marco-MiniLM-L-6-v2`)
 
+---
+
+## 🧪 Example Usage
 
 ```python
 import numpy as np
@@ -31,7 +40,6 @@ documents = [
     "Doc one",
     "Doc two",
     "Another doc",
-    
 ] + [f"Doc {i}" for i in range(8)]
 
 # Define matching embeddings
@@ -56,7 +64,8 @@ docs, scores = retriever.hybrid_search(query_emb, query_text, top_k=3)
 retrieved_docs, other_scores = retriever.retrieve(query_text, top_k=3)
 ```
 
+---
 
+## 💬 Feedback
 
-
-
+We’re currently running a pilot and looking for feedback! Try it out and let us know how it performs on your real-world workloads.
