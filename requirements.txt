@@ -2,3 +2,12 @@ fastapi==0.95.0
 uvicorn==0.23.1
 maturin==0.14.1
 numpy
+requests
+sentence-transformers
+langchain
+openai
+uvicorn
+jinja2
+spacy
+pandas
+rapidfuzz
